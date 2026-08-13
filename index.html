@@ -1,45 +1,314 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Nabtahil Rehman Portfolio</title>
-    style.css
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabtahil Rehman | Robotics & AI Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Nabtahil Rehman</h1>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Nabtahil<div class="logo-dot"></div></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
 
-<p>
-BS Robotics & Intelligent Systems Student
-</p>
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+        <div class="container">
+            <h1>Nabtahil <span>Rehman</span></h1>
+            <p>Robotics & Intelligent Systems Engineer specializing in Computer Vision, Machine Learning, and autonomous hardware development.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
 
-<h2>About Me</h2>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <div class="section-header" style="text-align: left;">
+                        <h2 class="section-title" style="font-size: 2rem;">About Me</h2>
+                    </div>
+                    <p>I am a Robotics and Intelligent Systems undergraduate at Bahria University, passionate about Artificial Intelligence, Machine Learning, Computer Vision, and Robotics.</p>
+                    <p>I enjoy developing practical technology solutions, working with intelligent systems and simulations, and continuously improving my technical skills through internships, academic projects, and hands-on experimentation. My approach combines algorithmic development with physical hardware implementation.</p>
+                </div>
+                <div class="stats-grid fade-in">
+                    <div class="stat-card">
+                        <div class="stat-value">3.44</div>
+                        <div class="stat-label">Current CGPA</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">2028</div>
+                        <div class="stat-label">Expected Graduation</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">3+</div>
+                        <div class="stat-label">Professional Internships</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">10+</div>
+                        <div class="stat-label">Technical Projects</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<p>
-I am a Robotics and Intelligent Systems undergraduate passionate about
-Artificial Intelligence, Machine Learning, Computer Vision, and Robotics.
-</p>
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey in AI, Robotics, and UI/UX design.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">Machine Learning & RL Engineer</div>
+                    <h3 class="timeline-title">Arbotrix</h3>
+                    <div class="timeline-org">Robotics Internship</div>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Worked on computer vision projects involving real-time object detection using YOLOv8 and OAK-D cameras.</li>
+                            <li>Developed and tested CV workflows for identifying objects in live robotics environments.</li>
+                            <li>Used Gazebo for robotics simulation, testing, and evaluating robotic behaviour in virtual environments.</li>
+                            <li>Contributed to ML/RL tasks and initiated development of a home-cleaning robot project.</li>
+                        </ul>
+                    </div>
+                </div>
 
-<h2>Experience</h2>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">UI/UX Design & Front-End Developer (Jun - Aug 2025)</div>
+                    <h3 class="timeline-title">Pakistan Bureau of Statistics (PBS)</h3>
+                    <div class="timeline-org">Mobile Application Development</div>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Designed user flows for a citizen-facing survey app from concept to high-fidelity screens.</li>
+                            <li>Created low-fidelity wireframes and polished mobile UI using Figma.</li>
+                            <li>Prepared front-end designs for implementation and supported developer handoff.</li>
+                        </ul>
+                    </div>
+                </div>
 
-<ul>
-<li>FlyRank AI Internship</li>
-<li>Machine Learning & Reinforcement Learning Engineer - Arbotrix</li>
-<li>UI/UX Design Intern - Pakistan Bureau of Statistics</li>
-</ul>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">AI Fluency & Machine Learning Intern</div>
+                    <h3 class="timeline-title">FlyRank</h3>
+                    <div class="timeline-org">AI & ML Internship</div>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Completed AI Fluency assignments focused on applying artificial intelligence tools and concepts to practical, evidence-backed tasks.</li>
+                            <li>Integrated Machine Learning techniques to build and enhance AI-powered workflows, utilizing structured problem-solving and prompt engineering.</li>
+                            <li>Developed a stronger understanding of AI/ML tools, automation, research, and model development.</li>
+                            <li>Documented evidence to demonstrate the quality, accuracy, and effectiveness of the implemented AI/ML solutions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h2>Projects</h2>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A selection of my work in robotics, machine learning, and software development.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <span class="project-badge">Computer Vision</span>
+                    <h3 class="project-title">Object Detection & Perception System</h3>
+                    <p class="project-desc">Developed an object detection system using SSD MobileNet V2 and YOLOv8. Connected Python to CoppeliaSim via ZMQ API to receive live simulated camera frames.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span><span class="tag">YOLOv8</span><span class="tag">OpenCV</span><span class="tag">CoppeliaSim</span>
+                    </div>
+                </div>
 
-<ul>
-<li>Flood Risk Prediction System</li>
-<li>YOLOv8 Object Detection</li>
-<li>Solar Sprint Challenge</li>
-</ul>
+                <div class="project-card fade-in">
+                    <span class="project-badge">Machine Learning</span>
+                    <h3 class="project-title">Flood Risk Prediction System</h3>
+                    <p class="project-desc">ML system predicting flood-risk levels (Low, Med, High) using environmental data. Random Forest achieved 83% accuracy. Delivered as an interactive Streamlit app.</p>
+                    <div class="project-tags">
+                        <span class="tag">Scikit-learn</span><span class="tag">XGBoost</span><span class="tag">TensorFlow</span><span class="tag">Streamlit</span>
+                    </div>
+                </div>
 
-<h2>Skills</h2>
+                <div class="project-card fade-in">
+                    <span class="project-badge">Robotics Hardware</span>
+                    <h3 class="project-title">Solar Sprint Challenge RC Car</h3>
+                    <p class="project-desc">Built a solar-powered RC car using three Arduino boards, Bluetooth communication, PWM motor control, and differential-drive steering. Chassis welded from raw iron.</p>
+                    <div class="project-tags">
+                        <span class="tag">Arduino</span><span class="tag">C++</span><span class="tag">HC-05</span><span class="tag">Hardware</span>
+                    </div>
+                </div>
 
-<p>
-Python, Machine Learning, Computer Vision, Robotics, Git, GitHub
-</p>
+                <div class="project-card fade-in">
+                    <span class="project-badge">Networking</span>
+                    <h3 class="project-title">Campus Network Prototype</h3>
+                    <p class="project-desc">Designed a campus-wide network for 7 departments and 1,680 devices in Cisco Packet Tracer. Implemented VLANs, VLSM, routing protocols (OSPF, RIP), and ACLs.</p>
+                    <div class="project-tags">
+                        <span class="tag">Cisco</span><span class="tag">VLAN/VLSM</span><span class="tag">OSPF</span><span class="tag">ACLs</span>
+                    </div>
+                </div>
 
+                <div class="project-card fade-in">
+                    <span class="project-badge">Software</span>
+                    <h3 class="project-title">Smart Vehicle Monitoring System</h3>
+                    <p class="project-desc">Developed a C++ console application for managing vehicles, owners, maintenance records, and traffic violations using OOP principles and inheritance.</p>
+                    <div class="project-tags">
+                        <span class="tag">C++</span><span class="tag">OOP</span><span class="tag">Data Structures</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <span class="project-badge">Upcoming</span>
+                    <h3 class="project-title">Home-Cleaning Robot</h3>
+                    <p class="project-desc">Currently developing an autonomous home-cleaning robot combining robotic perception, simulation, intelligent decision-making, and practical hardware implementation.</p>
+                    <div class="project-tags">
+                        <span class="tag">ROS2</span><span class="tag">Computer Vision</span><span class="tag">Reinforcement Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">A comprehensive toolkit spanning software, hardware, and design.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Python</span><span class="skill-item">TensorFlow/Keras</span><span class="skill-item">Scikit-learn</span><span class="skill-item">XGBoost</span><span class="skill-item">Neural Networks</span><span class="skill-item">Reinforcement Learning</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Computer Vision</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">OpenCV</span><span class="skill-item">YOLOv8</span><span class="skill-item">SSD MobileNet V2</span><span class="skill-item">OAK-D Camera</span><span class="skill-item">Ultralytics</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Robotics & Hardware</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Gazebo</span><span class="skill-item">CoppeliaSim</span><span class="skill-item">ROS2 (Learning)</span><span class="skill-item">Arduino (Nano/Uno)</span><span class="skill-item">C / C++</span><span class="skill-item">Circuit Design</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Design & Networking</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Figma</span><span class="skill-item">UI/UX Design</span><span class="skill-item">Cisco Packet Tracer</span><span class="skill-item">VLAN & VLSM</span><span class="skill-item">AutoCAD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Certifications & Achievements</h2>
+            </div>
+            <div class="cert-list">
+                <div class="cert-item fade-in">
+                    <div class="cert-year">JUN 2026</div>
+                    <h4 class="cert-title">Data Labeling Job Simulation</h4>
+                    <div class="cert-org">Forage</div>
+                </div>
+                <div class="cert-item fade-in">
+                    <div class="cert-year">JUL 2026</div>
+                    <h4 class="cert-title">Introduction to AI and Machine Learning</h4>
+                    <div class="cert-org">IBM SkillsBuild</div>
+                </div>
+                <div class="cert-item fade-in">
+                    <div class="cert-year">MAY 2026</div>
+                    <h4 class="cert-title">Best Performance Award</h4>
+                    <div class="cert-org">Robotics Open House, Bahria University</div>
+                </div>
+                <div class="cert-item fade-in">
+                    <div class="cert-year">CURRENT</div>
+                    <h4 class="cert-title">Executive Member</h4>
+                    <div class="cert-org">IEEE Women in Engineering (WIE)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content fade-in">
+                <h3>Let's Build Something Intelligent</h3>
+                <p>Open to internship opportunities, collaborations, and technical discussions.</p>
+                <a href="mailto:rnabtahil@gmail.com" class="btn btn-primary">Contact Me</a>
+                
+                <div class="social-links">
+                    <a href="https://github.com/nabtahilrehman" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                        <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nabtahil-rehman-93188b41b/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                        <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="mailto:rnabtahil@gmail.com" class="social-link" title="Email">
+                        <svg viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
+                    </a>
+                </div>
+                
+                <div class="copyright">
+                    &copy; 2024 Nabtahil Rehman. Designed with a focus on usability and clean aesthetics.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+
+        // Scroll Fade-in Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
